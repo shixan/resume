@@ -7,33 +7,49 @@
     <meta name="Keywords" content="Dmitry, resume">
     <meta name="description" content="страница-резюме Дмитрия Шиханцова">
     <title>Резюме Дмитрия</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <img src="imgs/avatar.jpg" width="250" alt="Дмитрий Шиханцов">
+    <div class="container">
 
-    <h1><strong>Дмитрий Шиханцов</strong></h1>
+    <div class="info">
+        <img src="imgs/avatar.jpg" alt="Дмитрий Шиханцов" class="avatar">
+      
+    
+        <div class="info-text">
+        <h1><strong>Дмитрий Шиханцов</strong></h1>
 
-    <p>Я <strong>специалист по продажам</strong> в развивающейся компании</p>
+        <p>Я <strong>специалист по продажам</strong> в развивающейся компании</p>
 
-    <p><em>Люблю отдых на природе.</em> Пробую себя в <strong>программировании</strong>.</p>
+        <p><em>Люблю отдых на природе.</em> Пробую себя в <strong>программировании</strong>.</p>
 
-    <p><Strong>Список социальных  сетей:</Strong></p>
+        <h4><Strong>Список социальных  сетей:</Strong></h4>
 
-    <a href="https://vk.com/shixan_d" target="_blank">Vkontakte</a>
-    | 
-    <a href="https://www.instagram.com/shixan_d/" target="_blank">Instagram</a>
+        <a href="https://vk.com/shixan_d" target="_blank">Vkontakte</a>
+        | 
+        <a href="https://www.instagram.com/shixan_d/" target="_blank">Instagram</a>
+        </div>
+    </div>
+    
     <hr>
+
+    <div class="hobby">
     <h2><strong>Мои хобби:</strong></h2>
 
-    <ol type="a">
+    <ol class="list">
         <li><strong>Отдых с друзьями</strong></li>
         <li><strong>Рыбалка</strong></li>
         <li><strong>Авто</strong></li>
     </ol>
+    </div>
+
     <hr>
+
+    <div class="job">
     <h2><strong>Опыт работы</strong></h2>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -41,6 +57,7 @@
                 <th>Год</th>
             </tr>
         </thead>
+
         <tbody>
         <tr>
             <td>Автопарк</td>
@@ -59,30 +76,48 @@
         </tr>
         </tbody>
     </table>
+    </div>
+    
+    <hr>
 
-    <h2><strong>Связаться со мной</strong></h2>
+    <div class="courses">
+        <h2>Мои Курсы</h2>
+        <ul class="link-list">
+            <li>Получение проффесии Frontend разработчик</li>
+            <li>Все Курсы</li>
+        </ul>
+    </div>
 
-    <form>
+    <hr>
 
-        <div>
-            <label for="name">Ваше Имя:</label>
-            <input type="text" id="name" placeholder="Введите Имя">
+    <div class="contact">
+    
+
+    <form class="form-group">
+        <h2><strong>Связаться со мной</strong></h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Ваше Имя:</label>
+                <input type="text" id="name" placeholder="Введите Имя">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите сообшение..."></textarea>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-
-        <div>
-            <label for="message">Сообщение</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообшение..."></textarea>
-        </div>
-
-        <button type="submit"><strong>Отправить!</strong></button>
+        <button type="submit" class="btn"><strong>Отправить!</strong></button>
 
     </form>
+    </div>
+    </div>
  
 </body>
 </html>
